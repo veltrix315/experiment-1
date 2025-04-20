@@ -1,0 +1,46 @@
+#carouselExampleCaptions {
+    width: 100%;          /* Ensure the carousel takes up the full width of the page */
+    height: 500px;        /* Set a fixed height for the carousel (adjust as needed) */
+    margin: 0 auto;       /* Center the carousel horizontally */
+    position: relative;   /* Ensure correct positioning for carousel control buttons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+  
+  #carouselExampleCaptions .carousel-inner {
+    height: 100%;         /* Ensure the carousel inner fills the height of the container */
+  }
+  
+  #carouselExampleCaptions img {
+    width: auto;          /* Image width adjusts to maintain aspect ratio */
+    height: 500px;         /* Image height fills the carousel height */
+    margin: 0 auto;       /* Center the image within the carousel */
+    object-fit:cover;  /* Prevents image from being stretched and ensures it's fully visible */
+  }
+
+  body {
+    background-color: rgb(33, 32, 32);
+  }
+
+  .movies {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  } 
+
+  #promotion {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #feedbackform {
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #checkout-form {
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 19px;
+  }

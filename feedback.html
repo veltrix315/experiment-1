@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="styles.css" rel="stylesheet">
+    <title>E-Commerce</title>
+</head>
+
+<body id="feedbacktab">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-0">
+            <div class="container-fluid">
+                <img src="logo.png" href="index.html" style="width: 3%;" class="me-3">
+              <a class="navbar-brand" href="index.html">MovieNest</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                  </li>
+                </ul>
+                <button class="btn btn-outline-light me-1" data-bs-toggle="modal" data-bs-target="#signuppage">Sign Up</button>
+                <div class="modal fade" id="signuppage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Full Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailaddress" class="form-label">E-mail Address</label>
+                          <input type="text" class="form-control" id="emailaddress" placeholder="abc@xyz.mn">
+                        </div>
+                        <div class="mb-3">
+                          <label for="newpassword" class="form-label">Enter New Password</label>
+                          <input type="password" class="form-control" id="newpassword" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                          <label for="repassword" class="form-label">Re-enter your password</label>
+                          <input type="password" class="form-control" id="repassword" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-outline-light m-2" data-bs-toggle="modal" data-bs-target="#loginpage">Login</button>
+                <div class="modal fade" id="loginpage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="emailaddress" class="form-label">E-mail Address/Username</label>
+                          <input type="text" class="form-control" id="emailaddress" placeholder="E-mail Address/Username">
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Enter New Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div id="feedbackform" class="text-white mx-auto p-5 my-5">
+            <h3 style="text-decoration: underline;">Feedback Form</h3>
+            <form class="m-1">
+                <div class="m-1">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" id="name">
+                </div>
+                <div class="m-1">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" placeholder="E-Mail" id="email">
+                </div>
+                <div class="m-2">
+                    <label for="experience" class="form-label">How was your experience?</label>
+                    <ul id="experience">
+                    <div class="form-check m-1" >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="great">
+                        <label for="great">5</label>
+                    </div>
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="radio" id="better" name="flexRadioDefault">
+                        <label for="better">4</label>
+                    </div>
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="radio" id="good" name="flexRadioDefault">
+                        <label for="good">3</label>
+                    </div>
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="radio" id="bad" name="flexRadioDefault">
+                        <label for="bad">2</label>
+                    </div>
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="radio" id="ugly" name="flexRadioDefault">
+                        <label for="ugly">1</label>
+                    </div>
+                    </ul>
+                </div>
+                <center>
+                <button class="btn btn-primary">Submit</button>
+                </center>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer" class="text-white text-center p-2">
+          <p class="m-0">&copy; Copyright MovieNest 2025.</p>
+        </div>
+      </footer>
+      <script src="cart.js"></script>
+</body>
+</html>
